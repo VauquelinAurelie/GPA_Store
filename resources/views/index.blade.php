@@ -28,7 +28,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#services">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#header">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="#categories">Catégories</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
@@ -36,13 +36,48 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead" id="header">
     <div class="container">
         <div class="masthead-subheading">Bienvenue sur shop !</div>
         <div class="masthead-heading text-uppercase">Des produits de qualité à des prix incroyables, juste pour vous.</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">En savoir plus</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#carousel">En savoir plus</a>
     </div>
 </header>
+
+<!-- Carousel-->
+<section class="page-section" id="carousel">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Promotions</h2>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="dist/assets/img/carousel/black_friday.png" class="d-block w-75" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/assets/img/carousel/mega_sale.jpg" class="d-block w-75" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/assets/img/carousel/summer_sales.jpg" class="d-block w-75" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+</section>
 
 <!-- Catégories-->
 <section class="page-section" id="categories">
