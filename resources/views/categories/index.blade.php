@@ -15,12 +15,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="{{ asset('dist/css/styles.css') }}">
+    @php
+        use Illuminate\Support\Str;
+    @endphp
+
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="#page-top"><img src="dist/assets/img/header/shop.png" alt="..."/></a>
+        <a class="navbar-brand" href="#page-top"><img src="dist/assets/img/header/shop.png" alt="logo shop"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -29,7 +33,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Catégories</a></li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Catégories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @foreach ($categoryProducts as $category => $products)
+                            <li>
+                                <a class="dropdown-item" href="#{{ Str::slug($category) }}">
+                                    {{ $categoryTranslations[$category] ?? $category }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -40,15 +60,16 @@
     <div class="container">
         <div class="row">
             @foreach ($categoryProducts as $category => $products)
-                <div class="col-md-12">
-                    <h2 class="my-4">{{ ucwords($category) }}</h2>
+                <div class="col-md-12" id="{{ Str::slug($category) }}">
+                    <h2 class="my-4">{{ $categoryTranslations[$category] ?? ucwords($category) }}</h2>
 
                     @if(count($products) > 0)
                         <div class="row">
                             @foreach ($products as $product)
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                     <div class="card h-100">
-                                        <img src="{{ $product['image'] }}" class="card-img-top" alt="{{ $product['title'] }}">
+                                        <img src="{{ $product['image'] }}" class="card-img-top"
+                                             alt="{{ $product['title'] }}">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ $product['title'] }}</h5>
                                             <p class="card-text">{{ $product['description'] }}</p>
@@ -63,6 +84,7 @@
                     @endif
                 </div>
             @endforeach
+
         </div>
     </div>
 </section>

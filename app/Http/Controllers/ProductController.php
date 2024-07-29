@@ -36,6 +36,13 @@ class ProductController extends Controller
     {
         $categories = ['electronics', 'jewelery', 'men\'s clothing', 'women\'s clothing'];
 
+        $categoryTranslations = [
+            'electronics' => 'Électronique',
+            'jewelery' => 'Bijoux',
+            'men\'s clothing' => 'Vêtements homme',
+            'women\'s clothing' => 'Vêtements femme',
+        ];
+
         $categoryProducts = [];
         foreach ($categories as $category) {
             $encodedCategory = rawurlencode($category);
@@ -58,7 +65,10 @@ class ProductController extends Controller
             }
         }
 
-        return view('categories.index', ['categoryProducts' => $categoryProducts]);
+        return view('categories.index', [
+            'categoryProducts' => $categoryProducts,
+            'categoryTranslations' => $categoryTranslations
+        ]);
     }
 }
 
