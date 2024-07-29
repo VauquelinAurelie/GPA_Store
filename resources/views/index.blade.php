@@ -62,13 +62,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="dist/assets/img/carousel/black_friday.png" class="d-block w-75" alt="First slide">
+                    <img src="dist/assets/img/carousel/black_friday.png" class="d-block" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="dist/assets/img/carousel/mega_sale.jpg" class="d-block w-75" alt="Second slide">
+                    <img src="dist/assets/img/carousel/mega_sale.jpg" class="d-block" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="dist/assets/img/carousel/summer_sales.jpg" class="d-block w-75" alt="Third slide">
+                    <img src="dist/assets/img/carousel/summer_sales.jpg" class="d-block" alt="Third slide">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
