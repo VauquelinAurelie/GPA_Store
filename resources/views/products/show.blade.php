@@ -15,9 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="{{ asset('dist/css/styles.css') }}">
-    @php
-        use Illuminate\Support\Str;
-    @endphp
 
 </head>
 <body id="page-top">
@@ -33,61 +30,26 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Accueil</a></li>
-
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Catégories
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @foreach ($categoryProducts as $category => $products)
-                            <li>
-                                <a class="dropdown-item" href="#{{ Str::slug($category) }}">
-                                    {{ $categoryTranslations[$category] ?? $category }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="{{route('categories.index')}}">Retour</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Categories-->
-<section class="page-section" id="allCategories">
-    <div class="container">
-        <div class="row">
-            @foreach ($categoryProducts as $category => $products)
-                <div class="col-md-12" id="{{ Str::slug($category) }}">
-                    <h2 class="my-4">{{ $categoryTranslations[$category] ?? ucwords($category) }}</h2>
-
-                    @if(count($products) > 0)
-                        <div class="row">
-                            @foreach ($products as $product)
-                                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <div class="card h-100">
-                                        <a href="{{ route('product.show', $product['id']) }}">
-                                            <img src="{{ $product['image'] }}" class="card-img-top" alt="{{ $product['title'] }}">
-                                        </a>
-                                        <div class="card-body">
-                                            <a href="{{ route('product.show', $product['id']) }}">
-                                                <h5 class="card-title">{{ $product['title'] }}</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    @else
-                        <p>Aucun produit disponible pour cette catégorie.</p>
-                    @endif
-                </div>
-            @endforeach
+<!-- Product Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ $product['image'] }}" class="img-fluid" alt="{{ $product['title'] }}">
+        </div>
+        <div class="col-md-6">
+            <h2>{{ $product['title'] }}</h2>
+            <p>{{ $product['description'] }}</p>
+            <p><strong>Prix: ${{ $product['price'] }}</strong></p>
+            <a href="{{ route('categories.index') }}" class="btn btn-primary">Retour aux catégories</a>
         </div>
     </div>
-</section>
+</div>
 
 <!-- Footer-->
 <footer class="footer py-4">
@@ -124,3 +86,4 @@
 <script src="{{ asset('src/js/api.js') }}"></script>
 </body>
 </html>
+

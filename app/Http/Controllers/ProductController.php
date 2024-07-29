@@ -70,5 +70,24 @@ class ProductController extends Controller
             'categoryTranslations' => $categoryTranslations
         ]);
     }
+
+    public function show($id)
+    {
+        $url = "https://fakestoreapi.com/products/{$id}";
+
+        try {
+            $response = Http::get($url);
+
+            if ($response->successful()) {
+                $product = $response->json();
+                return view('products.show', ['product' => $product]);
+            } else {
+                return redirect()->route('categories.index')->with('error', 'Unable to fetch product details.');
+            }
+        } catch (\Exception $e) {
+            Log::error("Exception fetching product details: " . $e->getMessage());
+            return redirect()->route('categories.index')->with('error', 'An error occurred while fetching product details.');
+        }
+    }
 }
 

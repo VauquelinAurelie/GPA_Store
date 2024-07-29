@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="#header">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#categories">Catégories</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('categories.index')}}">Catégories</a></li>
                 <li class="nav-item"><a class="nav-link" href="#product-gallery">Produits</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
