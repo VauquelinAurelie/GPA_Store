@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -51,4 +51,47 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+// --- retrieve products by category ---
+    document.querySelectorAll('.timeline li').forEach(function (categoryElement) {
+        categoryElement.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var category = this.getAttribute('data-category');
+            var encodedCategory = encodeURIComponent(category);
+
+            var apiUrl = `http://127.0.0.1:8000/api/products/category/${encodedCategory}`;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    var productsContainer = document.querySelector('#products-container');
+                    productsContainer.innerHTML = '';
+
+                    data.forEach(function (product) {
+                        var productHtml = `
+                    <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="${product.image}" alt="${product.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.title}</h5>
+                                <p class="card-text">$${product.price}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                        productsContainer.innerHTML += productHtml;
+                    });
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    alert('Erreur lors du chargement des produits. Veuillez réessayer.');
+                });
+        });
+    });
 });
