@@ -21,7 +21,7 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="#page-top"><img src="dist/assets/img/header/shop.png" alt="logo shop"/></a>
+        <a class="navbar-brand" href="#page-top"><img src="/dist/assets/img/header/shop.png" alt="logo shop"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -40,7 +40,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-            <img src="{{ $product['image'] }}" class="img-fluid" alt="{{ $product['title'] }}">
+            <img src="{{ $product['image'] }}" class="img-fluid_product" alt="{{ $product['title'] }}">
         </div>
         <div class="col-md-6">
             <h2>{{ $product['title'] }}</h2>
