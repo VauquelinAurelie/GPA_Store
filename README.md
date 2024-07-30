@@ -1,3 +1,4 @@
+<h3>page d'accueil</h3>
 ![Capture d’écran du 2024-07-30 14-22-05](https://github.com/user-attachments/assets/1249c50a-2dab-4104-b007-1acf77fa2c86)
 
 ![Capture d’écran du 2024-07-30 14-31-52](https://github.com/user-attachments/assets/2b2762df-0a2e-4aca-928b-8d43c7ca1fe7)
@@ -5,6 +6,15 @@
 ![Capture d’écran du 2024-07-30 14-31-33](https://github.com/user-attachments/assets/2aa35da5-4e8d-4ab6-a32a-abb264f652ef)
 ![Capture d’écran du 2024-07-30 14-31-09](https://github.com/user-attachments/assets/d7279168-f3d4-476f-ba02-2974f4606fd8)
 ![Capture d’écran du 2024-07-30 14-24-32](https://github.com/user-attachments/assets/ff72b738-ec64-418a-b399-189e9fd2552d)
+
+<h3>page catégories</h3>
+![Capture d’écran du 2024-07-30 14-36-45](https://github.com/user-attachments/assets/6f39ffe7-e764-45de-ba2c-540b2296e60f)
+![Capture d’écran du 2024-07-30 14-37-58](https://github.com/user-attachments/assets/31446950-8cb5-4d33-b015-7352cb5661b2)
+
+<h3>page produit</h3>
+![Capture d’écran du 2024-07-30 14-40-56](https://github.com/user-attachments/assets/ba5040e1-59f0-46a0-8528-cc2bbfbce2f4)
+
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
