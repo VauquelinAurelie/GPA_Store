@@ -1,6 +1,6 @@
 page d'accueil
 ![Capture d’écran du 2024-07-30 14-22-05](https://github.com/user-attachments/assets/1249c50a-2dab-4104-b007-1acf77fa2c86)
-
+![Capture d’écran du 2024-07-30 14-50-21](https://github.com/user-attachments/assets/4897526e-7ec9-44f0-9954-1b61b799756a)
 ![Capture d’écran du 2024-07-30 14-31-52](https://github.com/user-attachments/assets/2b2762df-0a2e-4aca-928b-8d43c7ca1fe7)
 ![Capture d’écran du 2024-07-30 14-30-50](https://github.com/user-attachments/assets/ea8de66e-46f5-4569-b311-fe3d9d266ac6)
 ![Capture d’écran du 2024-07-30 14-31-33](https://github.com/user-attachments/assets/2aa35da5-4e8d-4ab6-a32a-abb264f652ef)
