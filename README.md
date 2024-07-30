@@ -1,4 +1,4 @@
-<h3>page d'accueil</h3>
+page d'accueil
 ![Capture d’écran du 2024-07-30 14-22-05](https://github.com/user-attachments/assets/1249c50a-2dab-4104-b007-1acf77fa2c86)
 
 ![Capture d’écran du 2024-07-30 14-31-52](https://github.com/user-attachments/assets/2b2762df-0a2e-4aca-928b-8d43c7ca1fe7)
@@ -7,11 +7,11 @@
 ![Capture d’écran du 2024-07-30 14-31-09](https://github.com/user-attachments/assets/d7279168-f3d4-476f-ba02-2974f4606fd8)
 ![Capture d’écran du 2024-07-30 14-24-32](https://github.com/user-attachments/assets/ff72b738-ec64-418a-b399-189e9fd2552d)
 
-<h3>page catégories</h3>
+page catégories
 ![Capture d’écran du 2024-07-30 14-36-45](https://github.com/user-attachments/assets/6f39ffe7-e764-45de-ba2c-540b2296e60f)
 ![Capture d’écran du 2024-07-30 14-37-58](https://github.com/user-attachments/assets/31446950-8cb5-4d33-b015-7352cb5661b2)
 
-<h3>page produit</h3>
+page produit
 ![Capture d’écran du 2024-07-30 14-40-56](https://github.com/user-attachments/assets/ba5040e1-59f0-46a0-8528-cc2bbfbce2f4)
 
 
