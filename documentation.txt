@@ -1,0 +1,48 @@
+Objectif :
+    mini-site marchand, pour test technique de recrutement d'alternance
+
+Prérequis :
+    os : linux ubuntu 22.04
+    Outils et technologies :
+        - laravel 10
+        - composer
+        - bootstrap
+        - php8
+
+API :
+    - https://fakestoreapi.com/docs
+
+
+Ressources :
+    - https://startbootstrap.com/previews/agency
+    - https://pixabay.com
+    - https://laravel.com/docs/10.x
+    - https://getbootstrap.com
+    - https://developer.mozilla.org/fr
+    - https://www.flaticon.com/fr
+    - postman (pour tester les requêtes à l'api)
+    - bannières publicitaires issues d'un autre projet (réalisées par Andréa, Philémon, Axel et moi)
+
+
+Déscriptions des différentes pages :
+    Page d'accueil :
+        - dans la barre de navigation, l'onglet catégorie renvoie sur la page "catégories"
+        - carrousel publicitaire
+        - listing des catégories issues de l'api
+        - affichage dynamique des produits d'une catégorie au clic
+        - formulaire de contact (non implémenté)
+
+    Page catégories :
+        - menu déroulant sur l'onglet catégories
+        - galerie des produits par catégorie
+
+
+    Page produit :
+        - navigation vers l'accueil ou retour a la page catégories
+        - affiche un produit sélectionné sur la page catégories
+
+
+Améliorations :
+    - relier le site à une base de données pour la gestion des comptes clients, les commandes, les produits, etc.
+    - rendre fonctionnel le formulaire de contact pour que le client puisse mous envoyer un mail avec sa demande.
+    - ajouter un tunnel de vente, avec paiement.
