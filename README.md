@@ -1,5 +1,10 @@
 ![Capture d’écran du 2024-07-30 14-22-05](https://github.com/user-attachments/assets/1249c50a-2dab-4104-b007-1acf77fa2c86)
 
+![Capture d’écran du 2024-07-30 14-31-52](https://github.com/user-attachments/assets/2b2762df-0a2e-4aca-928b-8d43c7ca1fe7)
+![Capture d’écran du 2024-07-30 14-30-50](https://github.com/user-attachments/assets/ea8de66e-46f5-4569-b311-fe3d9d266ac6)
+![Capture d’écran du 2024-07-30 14-31-33](https://github.com/user-attachments/assets/2aa35da5-4e8d-4ab6-a32a-abb264f652ef)
+![Capture d’écran du 2024-07-30 14-31-09](https://github.com/user-attachments/assets/d7279168-f3d4-476f-ba02-2974f4606fd8)
+![Capture d’écran du 2024-07-30 14-24-32](https://github.com/user-attachments/assets/ff72b738-ec64-418a-b399-189e9fd2552d)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
