@@ -43,6 +43,7 @@ Déscriptions des différentes pages :
 
 
 Améliorations :
+    - ajouter le renvoie aux produits sur la page d'accueil, lorqu'on clique sur le nom d'une catégorie
     - relier le site à une base de données pour la gestion des comptes clients, les commandes, les produits, etc.
     - rendre fonctionnel le formulaire de contact pour que le client puisse mous envoyer un mail avec sa demande.
     - ajouter un tunnel de vente, avec paiement.

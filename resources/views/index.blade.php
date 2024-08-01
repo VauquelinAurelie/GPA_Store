@@ -97,7 +97,7 @@
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4><a href="#" onclick="showProducts('women\'s clothing')">Vêtements femme</a></h4>
+                        <h4><a href="#product-gallery" onclick="showProducts('women\'s clothing')">Vêtements femme</a></h4>
                     </div>
                 </div>
             </li>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4><a href="#" onclick="showProducts('men\'s clothing')">Vêtements homme</a></h4>
+                        <h4><a href="#product-gallery" onclick="showProducts('men\'s clothing')">Vêtements homme</a></h4>
                     </div>
                 </div>
             </li>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4><a href="#" onclick="showProducts('electronics')">Electronique</a></h4>
+                        <h4><a href="#product-gallery" onclick="showProducts('electronics')">Electronique</a></h4>
                     </div>
                 </div>
             </li>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4><a href="#" onclick="showProducts('jewelery')">Bijoux</a></h4>
+                        <h4><a href="#product-gallery" onclick="showProducts('jewelery')">Bijoux</a></h4>
                     </div>
                 </div>
             </li>
