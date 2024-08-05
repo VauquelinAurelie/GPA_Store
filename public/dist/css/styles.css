@@ -10962,7 +10962,8 @@ header.masthead {
     text-align: center;
     color: yellow;
     background-image: url("../assets/img/header/header_background/fashion.jpg");
-    height: 900px;
+    /*height: 900px;*/
+    height: 100vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -11183,6 +11184,11 @@ section#contact {
 section#contact .section-heading {
     color: #fff;
 }
+
+section#contact form#contactForm > div > div {
+    margin: 0;
+}
+
 section#contact form#contactForm .form-group {
     margin-bottom: 1.5rem;
 }
